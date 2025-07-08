@@ -1,0 +1,243 @@
+/* Tänne laitetaan kaikki Queries omaan tiedostoon jotta helpottaisi koodin lukemiseen */
+/* ➡️ Animaatiot ja avaimet eli keyframes alkaa täältä */
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@keyframes movedown {
+    0% {
+        opacity: 0;
+        transform: translate(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+/* ➡️ Animaatiot ja avaimet loppu */
+/* ➡️ Media Queries aloitettu yleisille koolle */
+@media (max-width: 1370px) {
+    header {
+        transition: .2s;
+    }
+    section {
+        transition: .2s;
+    }
+    .share {
+        transition: .2s;
+    }
+    #about {
+        height: auto;
+    }
+    :root {
+        --big-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+@media (max-width: 1169px){
+
+    :root {
+        --big-font: 2rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+@media (max-width: 997px) {
+    #about {
+        display: grid;
+        place-items: center;
+        gap: 5%;
+    }
+    header {
+        padding: 10px 5%; 
+        
+    }
+    .home, #about {
+        height: auto;
+        padding: 5%;
+    }
+    .info {
+        width: 100%;
+        height: auto;
+    }
+  
+}
+@media (max-width: 900px) {
+    .logo {
+        font-size: 20px;
+    }
+    .share {
+        display: none;
+    }
+    header {
+        padding: 11px 5%;
+        background: #2d2d2d;
+        display: flex;
+    }
+    .home {
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-text{
+        order: 2;
+    }
+    .homeimage {
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .homeimage img {
+        max-width: 450px;
+        width: 90%;
+        height: auto;
+    }
+}
+@media (max-width: 850px){
+    .navbar {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.2s ease-in-out;
+    }
+      :root {
+        --p-font: 20px;
+        transition: .2s;
+    }
+    .container {
+        width: 14em;
+    }
+}
+@media screen and (max-width: 780px){
+    .info {
+        font-size: 1em;
+    }
+    #timeline {
+        margin: 50px auto;
+    }
+    #timeline::after {
+        left: 31px;
+    }
+    .container2 {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box {
+        font-size: 15px;
+    }
+    .text-box small {
+        margin-bottom: 10px;
+    }
+    .right-container {
+        left: 0;
+    }
+    .left-container img , .right-container img {
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+    .container {
+        width: 45%;
+        font-size: 0.8em;
+    }
+    .portfolio-text-box {
+        font-size: smaller;
+    }
+}
+@media (max-width: 675px) {
+    .container{
+        width: 15em;
+        height:auto;
+        font-size: 0.7em;
+    }
+    #experience_heading {
+        font-size: 1em;
+    }
+    :root {
+        --p-font: 1rem;
+    }
+}
+/* ➡️ Media Queries jatkuu vielä  yleisille koolle kuten Logo ja navigointi */
+    @media (max-width: 726px) {
+        .logo {
+            display: none;
+        }
+        .navbar {
+            margin: auto;
+        }
+        :root {
+            --big-font :2rem;
+            --p-font: 20px;
+            transition: .2s;
+        }
+    }
+/* ➡️ Logo ja navigointi loppu */
+/* ➡️ Footer ja yhteystiedot aloitettu */
+    @media (max-width: 604px) {
+        .info {
+            width: 100%;
+            font-size: 1em;
+            min-height: auto;
+        }
+        .info h3 {
+            margin-bottom: 10px;
+        }
+        #about {
+            display: grid;
+        }
+        .footer {
+            font-size: .6em;
+            
+        }
+        .container {
+            width:45%;
+        }
+    }
+/* ➡️ Footer ja yhteystiedot loppu */
+
+/* ➡️ Pienemmät näytöt ja responsiivisuus aloitettu */
+    @media (max-width: 490px) {
+        .contact-item {
+            display: grid;   
+        }
+        .navbar a {
+            margin: 10px;
+            font-size: 4vw;
+        }
+    }
+/* ➡️ Pienemmät näytöt ja responsiivisuus loppu */
+
+/* ➡️ Erittäin pienet näytöt aloitettu */
+@media (max-width: 430px) {
+    .home-text h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    .text-box h3 {
+        font-size: 1.3em;
+    }
+    .container {
+        font-size: 0.9em;
+        width: 95%; 
+    }
+    .btn {
+        font-size: 4vw;
+        padding: 4%;
+    }
+    .home-text h3 {
+        font-size: 1.1rem;
+    }
+}
+/* ➡️ Erittäin pienet näytöt osio loppu */
