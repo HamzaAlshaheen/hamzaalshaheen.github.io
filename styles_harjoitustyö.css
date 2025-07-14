@@ -488,3 +488,46 @@ p {
   background-color: #e0e0e0;
   color: #333;
 }
+
+.tools-section {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.tools-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.tool-badge {
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  transition: all 0.2s ease-in-out;
+}
+
+.tool-badge i {
+  font-size: 1rem;
+}
+
+.tool-badge:hover {
+  background-color:var(--main-color);
+  transform: scale(1.05);
+  color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
